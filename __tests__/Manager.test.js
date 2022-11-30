@@ -1,11 +1,11 @@
-const Manager = require('../Manager');
+const Manager = require('../lib/Manager');
 
 describe('manager', () => {
+    const testManager = new Manager('maggie', 44, 'email@test.com', 'office')
     it('should return office number', () => {
-        expect(Manager).toBe(this.officeNumber);
+        expect(testManager.officeNumber).toBe('office');
     });
     it('getRole() should return Manager', () => {
-        const testManager = new Manager('maggie', 44, 'email@test.com', 'office')
         expect(testManager.getRole()).toBe('Manager');
     });
 });

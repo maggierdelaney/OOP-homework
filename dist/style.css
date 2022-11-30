@@ -1,0 +1,29 @@
+ul {
+    list-style: none;
+}
+
+.jumbotron {
+    text-align: center;
+    font-weight: bold;
+    background-color: transparent;
+    color: rgb(2, 118, 242);
+    border-color: rgb(1, 54, 110);
+}
+
+.card {
+    text-align: left;
+    background-color: white;
+    color: rgb(139, 9, 0); 
+    border-color: rgb(208, 49, 38);
+    display: grid;
+}
+
+.card-header {
+    font-weight: bold;
+    color: black;
+}
+
+.list-group-item {
+    color: black;
+    font-weight: lighter;
+}

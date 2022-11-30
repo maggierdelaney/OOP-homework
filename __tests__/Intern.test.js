@@ -1,11 +1,11 @@
-const Intern = require('../Intern');
+const Intern = require('../lib/Intern');
 
 describe('intern', () => {
+    const testIntern = new Intern('maggie', 44, 'email@test.com', 'school')
     it('should return school', () => {
-        expect(Intern).toBe(this.school);
+        expect(testIntern.school).toBe('school');
     });
     it('getRole() should return Intern', () => {
-        const testIntern = new Intern('maggie', 44, 'email@test.com', 'school')
         expect(testIntern.getRole()).toBe('Intern');
     });
 });
